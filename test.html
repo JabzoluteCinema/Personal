@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe4e1;
+            color: #333;
+        }
+        header {
+            background: #d81b60;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        main {
+            padding: 2rem;
+        }
+        .student-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        .student-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
+        }
+        .student-card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+        .student-card span {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #444;
+        }
+        footer {
+            background: #d81b60;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Students List MOST WANTED</h1>
+    </header>
+    <main>
+        <div class="student-list">
+            <div class="student-card">
+                <img src="https://scontent.fmnl17-2.fna.fbcdn.net/v/t39.30808-1/408401091_834879845052106_8282918876534826712_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=107&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeH4Rt154DlVl-t2BnP4emP2siXtvQl8nH6yJe29CXycfvCr3UkeJ9W2K0kvU2sfWt-Oz9ZIad3fv4o08qXl0MRO&_nc_ohc=e7jRyh1eeUgQ7kNvgHQe3ky&_nc_oc=Adh0jjUsRHSgubM42zWyijA2qgxTa9okE25VjLIYHtscFu51PQQaR4TMaZwVDUW6RzE&_nc_ad=z-m&_nc_cid=0&_nc_zt=24&_nc_ht=scontent.fmnl17-2.fna&_nc_gid=ASjyyE8GOiySbIuDlSf_5yH&oh=00_AYDLzp81jy8HUGIv3SfXMXTOunU-kdzwH3t9XofTxEs-bg&oe=67842FB5" alt="Student 1">
+                <span>Student 1 Bounty: 696969$</span>
+            </div>
+            <div class="student-card">
+                <img src="https://scontent.fmnl17-2.fna.fbcdn.net/v/t39.30808-1/463332156_1282273413154303_3733061383836216992_n.jpg?stp=dst-jpg_s100x100_tt6&_nc_cat=111&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeENRXg0Pj5eX1fZAKQ7C9_rm8Os4rp6NQKbw6ziuno1Ah9uLe6edfZnGVGbpmm7TJXTUHUTLmwguEUSrVezcdO6&_nc_ohc=DYX392BktEcQ7kNvgFDR96y&_nc_oc=AdgpdkE1g7rVNDaW3_sfkBSi1GAliUytERVCpbp5HayQDueV_QTpUNKDRL30tfY92cU&_nc_ad=z-m&_nc_cid=0&_nc_zt=24&_nc_ht=scontent.fmnl17-2.fna&_nc_gid=ASjyyE8GOiySbIuDlSf_5yH&oh=00_AYB0bSZ5gvaByzaorsmZoyiCyHDPcNU34k6eIdoA6L2Xvg&oe=67845D1C" alt="Student 2">
+                <span>Student 2 Bounty: 12345678$</span>
+            </div>
+            <div class="student-card">
+                <img src="https://scontent.fmnl17-2.fna.fbcdn.net/v/t1.15752-9/471868909_611597414578189_7120582151441993059_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeETK-rIdovH8SBBjTtWHoa_YfHYAsg1mN5h8dgCyDWY3rLqblKiYdr6AIbt-qvpyez7puGMHAz01j1YrHo9b7Dx&_nc_ohc=lGx7PBdGewMQ7kNvgE8sI1a&_nc_oc=AdgGYx8hKDLtpPHBnUbuGBxblnFxGPCRUem6qw21QEmuCI8VYMsbZOsYKFTRb3snjtc&_nc_zt=23&_nc_ht=scontent.fmnl17-2.fna&oh=03_Q7cD1gHa3wLggIXHEs1Y0zSrXcdgebBwYRzwfOVWntCdequmwA&oe=67A5F68F" alt="Student 3">
+                <span>Student 3 Bounty: 987654321$</span>
+            </div>
+            <div class="student-card">
+                <img src="https://scontent.fmnl17-3.fna.fbcdn.net/v/t1.15752-9/455237528_1214140533357587_8858375962569582267_n.png?_nc_cat=106&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHPz0dgo8GPoY9LGzLPRcvs0BzgE25IDKLQHOATbkgMonWXnCOnATeEBGFjs3rpfklvYBicQ47fytL4pbI8rMvJ&_nc_ohc=KmMZwadpnPsQ7kNvgFa6rdE&_nc_oc=AdisUA9DKiadtY985FvR3U4lsk4ZOsi7abnNYU5GNDSK7rF0nE40EkK4F9EwLTkiDdM&_nc_zt=23&_nc_ht=scontent.fmnl17-3.fna&oh=03_Q7cD1gFDlbphZVTI6YHUmz6fStvu4bZc5rBbKf_Q1Xu5-xhPhw&oe=67A60056" alt="Student 4">
+                <span>Student 4 Bounty: 13579$</span>
+            </div>
+            <div class="student-card">
+                <img src="https://scontent.fmnl17-5.fna.fbcdn.net/v/t1.15752-9/449763558_486168363956729_1385047668828816208_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeHYoMqqIvSZSvSUQLLNha58unNnQ9dLYkK6c2dD10tiQk82pIywVHwk88iNco6kXIaTyBCPph_PC2izpCHtGqOi&_nc_ohc=mas5Zd4egQYQ7kNvgGjasbL&_nc_oc=AdhWxTe5d6XEdtDlms7Vvm3OC-zigszvkQn7e0Cw_488-TSqwir9_Z2wh_5Xc7J2Gjc&_nc_zt=23&_nc_ht=scontent.fmnl17-5.fna&oh=03_Q7cD1gHgbHTCOiKbSmU4juYFWHCk986WAeKf9rFiG8cVVHWbew&oe=67A5F3BE" alt="Student 5">
+                <span>Student 5 Bounty: 2468$</span>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Student Directory</p>
+        <p>&copy; Made by Alejandro</p>
+    </footer>
+</body>
+</html>
